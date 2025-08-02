@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+</head>
+<body>
+    <div>
+        <ul class="week">
+            <li>Monday</li>
+            <li>Tuesday</li>
+            <li>Wednesday</li>
+            <li>Thursday</li>
+            <li>Friday</li>
+        </ul>
+    </div>
+</body>
+<script>
+    const list= document.querySelector('.week')
+    console.log(list)  
+
+    console.log(list.children) // gives a html collection
+
+    console.log(list.children[0].innerHTML) //monday
+
+    for(let i=0; i<list.children.length; i++){
+        console.log(list.children[i].textContent);
+    }
+
+    console.log(list.firstElementChild.innerText)
+    console.log(list.lastElementChild.innerText)
+
+    const dayOne = document.querySelector('li')
+    console.log(dayOne.parentElement)
+    console.log(dayOne.nextElementSibling)
+
+    console.log(list.childNodes) // imp text then li then again repeat
+
+
+
+
+</script>
+</html>
